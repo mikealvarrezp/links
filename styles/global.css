@@ -1,0 +1,36 @@
+* {
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-left:   20px;
+    padding-right:  20px;
+    padding-bottom: 64px;
+}
+
+.max-width {
+    width: 100%;
+    max-width: 550px;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+p, h1, h2 {
+    font-family: Kanit;
+}
+
+button {
+    cursor: pointer;
+}

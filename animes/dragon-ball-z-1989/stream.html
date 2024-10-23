@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    
+    <!-- <meta name='viewport' content='width=device-width' /> -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+    <meta http-equiv='Content-Security-Policy'  content="frame-ancestors 'none';"   />
+    <meta http-equiv='X-Content-Type-Options'   content='nosniff'       />
+    <meta http-equiv='X-XSS-Protection'         content='1; mode=block' />
+    <meta http-equiv='X-Frame-Options'          content='DENY'          />
+    <meta name='referrer'                       content='no-referrer'   />
+    
+    <link rel='stylesheet' href='/styles/reset.css'  />
+    <link rel='stylesheet' href='/styles/fonts.css'  />
+    <link rel='stylesheet' href='/styles/global.css' />
+    <link rel='stylesheet' href='/themes/anime.css'  />
+    
+    <link rel='icon' type='image/x-icon' href='/favicon.ico' />
+    <title>Dragon Ball Z - Dublado 1989 - Full HD</title>
+    <meta name='description' content='Assista em stream o maior clássico dos desenhos animados: Dragon Ball Z (1989) em Full HD Dublado em Português' />
+    <meta name='keywords'    content='Desenho, Anime, DBZ, Dragon Ball Z, Dublado, HD, Stream' />
+    
+</head>
+<body class='bg-blue'>
+    <main class='pattern'>
+        
+        <section class='sec-intro'>
+            <img alt='Avatar' src='avatar.webp' class='avatar' />
+            <h1 class='title'>Dragon Ball Z</h1>
+            <p class='subtitle'>1989 • Dublado • Stream HD</p>
+        </section>
+        
+        <section class='max-width'>
+
+            <iframe id='player' class='istream max-width' allowfullscreen='true'></iframe>
+            
+            <a href='./'><button class='bt'><p>LISTA DE EPISÓDIOS</p></button></a>
+        </section>
+
+    </main>
+
+    <script defer>
+        var qs_src = new URLSearchParams(window.location.search).get('src');
+        if (qs_src) { document.getElementById('player').src = decodeURIComponent(qs_src); }
+    </script>
+</body>
+</html>
